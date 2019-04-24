@@ -3,7 +3,9 @@ pipeline {
     node {
       label 'master'
     }
-
+  }
+  tools{
+      maven "mvn"
   }
   stages {
     stage('Build') {
